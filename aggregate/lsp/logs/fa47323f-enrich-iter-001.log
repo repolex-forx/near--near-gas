@@ -1,0 +1,17 @@
+[2026-05-10T09:41:51Z] === ENRICH ITERATION 1 START | repo=near/near-gas sha=fa47323f ===
+[2026-05-10T09:41:51Z] [iter=1] PHASE START: enrich repo=near/near-gas sha=fa47323f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fa47323f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fa47323f8260be431dba064d3c4c9698eb8d5497.nq.gz
+[2026-05-10T09:41:58Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-10T09:41:58Z] [iter=1] AST store loaded triples=27461 load_secs=0 mem_mb=120 MB
+[2026-05-10T09:41:58Z] [iter=1] Step 2: Finding LSP targets mem_mb=120 MB
+[2026-05-10T09:41:58Z] [iter=1] LSP targets found call_sites=240 imports=7 extends=0 implements=0 secs=0
+[2026-05-10T09:41:58Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=120 MB
+[2026-05-10T09:41:58Z] [iter=1] Position index built positions=1913 nodes_with_types=2288 secs=0 mem_mb=120 MB
+[2026-05-10T09:41:58Z] [iter=1] Step 3: Starting LSP resolution mem_mb=120 MB already_completed_types=[] already_completed_files=0
+[2026-05-10T09:41:58Z] [iter=1] Resolving target type target_type=call_site count=240
+[2026-05-10T09:42:16Z] [iter=1] Target type resolved target_type=call_site resolved=72 errors=139 secs=18 mem_mb=120 MB
+[2026-05-10T09:42:16Z] [iter=1] Resolving target type target_type=import_statement count=7
+[2026-05-10T09:42:22Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=0.5 files_done=3 resolved=4 errors=0 current=src/trait_impls/borsh.rs
+[2026-05-10T09:42:23Z] [iter=1] Target type resolved target_type=import_statement resolved=5 errors=0 secs=6 mem_mb=120 MB
+[2026-05-10T09:42:29Z] [iter=1] Step 5: Writing final enrichment file triples=1777
+[2026-05-10T09:42:29Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fa47323f8260be431dba064d3c4c9698eb8d5497.nq.gz size_kb=23
+[2026-05-10T09:42:29Z] [iter=1] PHASE END: enrich elapsed_s=38 elapsed_min=0.6 total_triples=1777
